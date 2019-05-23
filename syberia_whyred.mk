@@ -1,5 +1,5 @@
 # 
-# Copyright (C) 2018 The Mokee Project
+# Copyright (C) 2018 The SyberiaOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,13 +22,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
-# Inherit some common AOSiP stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
-
 # Inherit from custom vendor
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
-PRODUCT_NAME := aosip_whyred
+# Inherit some common SyberiaROM stuff.
+TARGET_BOOT_ANIMATION_RES := 2160
+$(call inherit-product, vendor/syberia/common.mk)
+
+PRODUCT_NAME := syberia_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
@@ -41,6 +42,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="whyred" \
     PRIVATE_BUILD_DESC="whyred-user 9 PKQ1.180904.001 V10.3.1.0.PEIMIXM release-keys"
 
-BUILD_FINGERPRINT := xiaomi/whyred/whyred:9/PKQ1.180904.001/V10.3.1.0.PEIMIXM:user/release-keys
+BUILD_FINGERPRINT := "xiaomi/whyred/whyred:9/PKQ1.180904.001/V10.3.1.0.PEIMIXM:user/release-keys"
 
 TARGET_VENDOR := Xiaomi
+
+SYBERIA_BUILD_TYPE := OFFICIAL
