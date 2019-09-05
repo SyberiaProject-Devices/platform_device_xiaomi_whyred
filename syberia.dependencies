@@ -17,7 +17,7 @@
   {
     "repository": "srfarias/kernel_xiaomi_whyred",
     "target_path": "kernel/xiaomi/whyred",
-    "branch": "caf-pie"
+    "branch": "new-caf-pie"
   },
   {
     "repository": "rashedsahaji/Syberia_vendor_xiaomi_whyred",
