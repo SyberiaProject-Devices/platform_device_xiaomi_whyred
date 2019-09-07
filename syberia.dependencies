@@ -1,6 +1,6 @@
 [
   {
-    "repository": "rashedsahaji/android_hardware_qcom_display",
+    "repository": "LineageOS/android_hardware_qcom_display",
     "target_path": "hardware/qcom/display-caf/msm8998",
     "branch": "lineage-16.0-caf-8998"
   },
